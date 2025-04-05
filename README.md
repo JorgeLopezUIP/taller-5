@@ -1,5 +1,3 @@
-Claro, aquí tienes un párrafo sobre cómo instalar Flask:
-
 Para instalar Flask, primero necesitas tener Python y pip (el gestor de paquetes de Python) instalados en tu sistema. Si no tienes pip, puedes instalarlo siguiendo las instrucciones en la documentación oficial de Python. Una vez tengas pip configurado, puedes instalar Flask fácilmente usando el siguiente comando en la terminal o línea de comandos:
 
 pip install Flask
