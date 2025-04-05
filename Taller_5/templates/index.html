@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de libros</title>
+</head>
+<body>
+    <h1>Libros registrados</h1>
+    <ul>
+        {% for key, libro in libros.items() %}
+            <li>{{ libro['libro'] }} - {{ libro['genero'] }} - {{ libro['autor']}} 
+                <input type="checkbox" name="leido"> 
+                <label for="leido">Leido</label> 
+                <a href="{{ url_for('editar_libro', index=key.split(':')[1]|int) }}">Editar</a> 
+                <a href="{{ url_for('eliminar_libro', index=key.split(':')[1]|int) }}">Eliminar</a><br><br> 
+            </li> 
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('registrar_libro') }}">Añadir un libro</a>
+</body>
+</html>

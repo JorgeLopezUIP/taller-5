@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar libro</title>
+</head>
+<body>
+    <h1>Edita el libro</h1> 
+    <form method="POST"> 
+        <label>Nuevo nombre del libro</label><br> 
+        <input type="text" name="nombre" value="{{ libro['libro']}}" required><br><br>
+
+        <label>Nuevo genero del libro</label><br> 
+        <input type="text" name="genero" value="{{ libro['genero']}}" required><br><br>
+
+        <label>Nuevo autor del libro</label><br> 
+        <input type="text" name="autor" value="{{ libro['autor']}}" required><br><br>
+
+        <button type="submit">Guardar cambios</button>
+    </form> 
+</body>
+</html>

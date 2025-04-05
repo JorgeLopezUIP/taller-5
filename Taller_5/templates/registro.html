@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir libro</title> 
+</head>
+<body>
+    <h1>Añade un libro</h1> 
+    <form method="POST"> 
+        <label>Nombre del libro</label><br> 
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Genero del libro</label><br> 
+        <input type="text" name="genero" required><br><br>
+
+        <label>Autor del libro</label><br> 
+        <input type="text" name="autor" required><br><br>
+
+        <button type="submit">Guardar</button>
+    </form>    
+    <a href="{{ url_for('index') }}">Ver libros</a>
+</body>
+</html>
